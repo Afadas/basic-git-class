@@ -1,7 +1,25 @@
 h1 {
     color: blue;
+    animation: rainbow 4s linear infinite;
 }
 
 p {
     color: red;
+    animation: rainbow 4s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    17% { color: orange; }
+    33% { color: yellow; }
+    50% { color: green; }
+    67% { color: blue; }
+    84% { color: indigo; }
+    100% { color: violet; }
+}
+
+.text-color {
+    color: #FF0000;  /* Using hex color */
+    color: rgb(255, 0, 0);  /* Using RGB */
+    color: hsl(0, 100%, 50%);  /* Using HSL */
 }
